@@ -7760,6 +7760,10 @@ input[type="file"] {
   box-shadow: none;
   padding: 0;
 }
+.badge {
+  background-color: #988a80;
+  font-weight: normal;
+}
 /*
  * !! IMPORTANT !!
  *
@@ -7970,4 +7974,71 @@ h6 {
 .new-offer-submit {
   margin-top: 20px;
   text-align: center;
+}
+.offer-status {
+  padding: 20px 0;
+}
+.offer-status:before,
+.offer-status:after {
+  content: " ";
+  display: table;
+}
+.offer-status:after {
+  clear: both;
+}
+.offer-status:before,
+.offer-status:after {
+  content: " ";
+  display: table;
+}
+.offer-status:after {
+  clear: both;
+}
+.offer-applicant {
+  padding: 10px;
+  border-top: solid 1px #988a80;
+}
+.offer-applicant:last-child {
+  border-bottom: solid 1px #988a80;
+}
+.offer-applicant .applicant-image {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+  position: relative;
+}
+.offer-applicant .applicant-image img {
+  width: 100%;
+}
+.offer-applicant .applicant-name {
+  padding-left: 85px;
+  margin-top: 0;
+  position: relative;
+}
+.offer-applicant .applicant-contacts {
+  padding-left: 95px;
+  position: relative;
+}
+.offer-applicant .applicant-contacts:after {
+  content: "";
+  position: absolute;
+  left: 85px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(152, 138, 128, 0.5);
+}
+.offer-applicant .contact-name {
+  position: relative;
+  padding-left: 5px;
+}
+.offer-applicant .contact-name:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 10px;
+  height: 1px;
+  background-color: rgba(152, 138, 128, 0.5);
 }

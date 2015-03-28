@@ -1,0 +1,58 @@
+.offer-status {
+  padding: @grid-gutter-width 0;
+  .clearfix();
+}
+
+.offer-applicant {
+  padding: ceil(@grid-gutter-width * .5);
+  border-top: solid 1px @brand-success;
+  &:last-child {
+    border-bottom: solid 1px @brand-success;
+  }
+
+  .applicant-image {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: ceil(@grid-gutter-width * .5);
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  .applicant-name {
+    padding-left: ceil(75px + ceil(@grid-gutter-width * .5) );
+    margin-top: 0;
+    position: relative;
+  }
+
+  .applicant-contacts {
+    padding-left: ceil( 75px + @grid-gutter-width );
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: ceil(75px + ceil(@grid-gutter-width * .5) );
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: fade(@brand-success, 50%);
+    }
+  }
+
+  .contact-name {
+    position: relative;
+    padding-left: ceil(@grid-gutter-width * .25);
+    &:before {
+      content: "";
+      position: absolute;
+      left: ceil(@grid-gutter-width * -.5);
+      top: 6px;
+      width: ceil(@grid-gutter-width * .5);
+      height: 1px;
+      background-color: fade(@brand-success, 50%);
+    }
+  }
+
+}
