@@ -21,7 +21,7 @@ a {
 
 header {
   background-color: @well-bg;
-  padding: @grid-gutter-width;
+  padding: @grid-gutter-width 0;
   padding-bottom: ceil(@grid-gutter-width * .25);
   border-bottom: solid 2px @brand-success;
   .wally-logo {
@@ -40,6 +40,24 @@ header {
       width: 120px;
     }
   }
+
+}
+
+.navbar {
+  border-bottom: solid 2px @brand-success;
+  .clearfix();
+  .wally-logo {
+    width: 160px;
+    float: left;
+    position: relative;
+    padding-top: ceil(@grid-gutter-width * .15);
+    padding-bottom: ceil(@grid-gutter-width * .15);
+    padding-left: ceil(@grid-gutter-width * .5);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 footer {
@@ -47,6 +65,24 @@ footer {
   padding: ceil(@grid-gutter-width * .75);
   border-top: solid 2px @brand-success;
   text-align: center;
+}
+
+.breadcrumb {
+  display: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: right;
+  margin-bottom: 0;
+  li + li::before {
+    content: "> ";
+    padding: 0 2px;
+  }
+}
+// SM and Wider
+@media (min-width: @screen-sm-min) {
+  .breadcrumb {
+    display: block;
+  }
 }
 
 // ===================================

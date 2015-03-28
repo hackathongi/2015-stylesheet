@@ -6818,7 +6818,7 @@ a:active {
 }
 header {
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 20px 0;
   padding-bottom: 5px;
   border-bottom: solid 2px #988a80;
 }
@@ -6839,11 +6839,58 @@ header .wally-logo img {
     width: 120px;
   }
 }
+.navbar {
+  border-bottom: solid 2px #988a80;
+}
+.navbar:before,
+.navbar:after {
+  content: " ";
+  display: table;
+}
+.navbar:after {
+  clear: both;
+}
+.navbar:before,
+.navbar:after {
+  content: " ";
+  display: table;
+}
+.navbar:after {
+  clear: both;
+}
+.navbar .wally-logo {
+  width: 160px;
+  float: left;
+  position: relative;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+.navbar .wally-logo img {
+  width: 100%;
+  height: auto;
+}
 footer {
   background-color: #f5f5f5;
   padding: 15px;
   border-top: solid 2px #988a80;
   text-align: center;
+}
+.breadcrumb {
+  display: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: right;
+  margin-bottom: 0;
+}
+.breadcrumb li + li::before {
+  content: "> ";
+  padding: 0 2px;
+}
+@media (min-width: 768px) {
+  .breadcrumb {
+    display: block;
+  }
 }
 /*
  * !! IMPORTANT !!
@@ -7029,4 +7076,26 @@ h6 {
     width: 120px;
     height: 120px;
   }
+}
+.new-offer {
+  padding: 20px 0;
+}
+.new-offer:before,
+.new-offer:after {
+  content: " ";
+  display: table;
+}
+.new-offer:after {
+  clear: both;
+}
+.new-offer:before,
+.new-offer:after {
+  content: " ";
+  display: table;
+}
+.new-offer:after {
+  clear: both;
+}
+.new-offer-title {
+  margin-top: 0;
 }
