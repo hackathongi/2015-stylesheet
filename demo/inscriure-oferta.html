@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Inscriure Oferta - Titol Oferta</title>
+    <title>Inscriure Oferta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="css/hackajobs-stylesheet.css" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-
     <div class="container">
         <div class="wally-logo">
             <img src="img/wallyJobsLogoHor.svg" alt="WallyJobs"/>
         </div>
         <div class="clearfix"></div>
     </div>
-
 </header>
 
-<main>
-    <div class="container">
-        <article class="job-offer offer">     
-            <h3>Aplicar a Titol oferta</h3>       
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Carta de presentació</label>
-    <textarea class="form-control" rows="3" placeholder="Descriu breuement perquè creus que els el candidat ideal per aquesta oferta... "></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Adjunta el teu CV</label>
-     <input class="file" id="input-1" type="file">
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Acepto política de privacitat
-    </label>
-  </div>
-   <button type="submit" class="btn btn-default hidden-xs"><< Tornar a la descripció</button>
-  <button type="submit" class="btn btn-primary">Aplicar a l'oferta</button>
-</form>
+<main class="container">
 
-        </article>
-    </div>
+    <article class="apply-offer">
+
+        <h4 class="apply-offer-subtitle">Inscriure's en l'oferta</h4>
+        <h2 class="apply-offer-title">Títol de l'oferta</h2>
+        <hr/>
+
+        <form role="form">
+            <div class="form-group apply-offer-presentation">
+                <label class="control-label" for="apply-offer-presentation">Títol</label>
+                <textarea placeholder="La teva carta de presentació" rows="8" id="apply-offer-presentation" class="form-control"></textarea>
+            </div>
+            <div class="form-group apply-offer-cv">
+                <label class="control-label" for="apply-offer-cv">Cuirriculum Vitae</label>
+                <input class="form-control" id="apply-offer-cv" type="file">
+            </div>
+            <div class="form-group apply-offer-submit">
+                <a class="btn btn-link" href="#">Cancela</a>
+                <a class="btn btn-primary" href="#">Aplica</a>
+            </div>
+        </form>
+
+    </article>
 
 </main>
 
@@ -50,9 +50,8 @@
     <p class="small">©2015 Bla bla bla, ...</p>
 </footer>
 
-
-
 <script type="text/javascript" src="js/hackajobs-stylesheet-dependencies.js"></script>
 
 </body>
+
 </html>

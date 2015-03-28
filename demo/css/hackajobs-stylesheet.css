@@ -7949,29 +7949,38 @@ h6 {
     height: 120px;
   }
 }
-.new-offer {
+.new-offer,
+.apply-offer {
   padding: 20px 0;
 }
 .new-offer:before,
-.new-offer:after {
+.apply-offer:before,
+.new-offer:after,
+.apply-offer:after {
   content: " ";
   display: table;
 }
-.new-offer:after {
+.new-offer:after,
+.apply-offer:after {
   clear: both;
 }
 .new-offer:before,
-.new-offer:after {
+.apply-offer:before,
+.new-offer:after,
+.apply-offer:after {
   content: " ";
   display: table;
 }
-.new-offer:after {
+.new-offer:after,
+.apply-offer:after {
   clear: both;
 }
-.new-offer-title {
+.new-offer-title,
+.apply-offer-title {
   margin-top: 0;
 }
-.new-offer-submit {
+.new-offer-submit,
+.apply-offer-submit {
   margin-top: 20px;
   text-align: center;
 }
