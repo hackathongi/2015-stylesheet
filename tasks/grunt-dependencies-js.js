@@ -27,7 +27,10 @@ module.exports = function(grunt) {
                     // Concat all JS third party dependencies into single file
                     'demo/js/hackajobs-stylesheet-dependencies.js' : [
                         '<%= grunt.params.dependencies.folder %>jquery/dist/jquery.js',
-                        '<%= grunt.params.dependencies.folder %>bootstrap/dist/js/bootstrap.js'
+                        '<%= grunt.params.dependencies.folder %>bootstrap/dist/js/bootstrap.js',
+                        '<%= grunt.params.dependencies.folder %>bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
+                        '<%= grunt.params.dependencies.folder %>bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js',
+                        '<%= grunt.params.dependencies.folder %>bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js'
                     ]
                 }
             }

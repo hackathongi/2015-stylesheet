@@ -26,6 +26,12 @@ module.exports = function(grunt) {
                         cwd: '<%= grunt.params.dependencies.folder %>bootstrap/less/',
                         src: '**/*',
                         dest: 'demo/less/bootstrap/'
+                    },
+                    {   // Bootstrap DatePicker LESS Files
+                        expand: true,
+                        cwd: '<%= grunt.params.dependencies.folder %>bootstrap-datepicker/less/',
+                        src: '**/*',
+                        dest: 'demo/less/bootstrap-datepicker/'
                     }
                 ]
             },
