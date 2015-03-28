@@ -56,32 +56,30 @@
                 <hr/>
 
                 <form role="form">
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputEmail1">Títol</label>
-                        <input class="form-control" id="exampleInputEmail1" placeholder="Introdueix el títol de l'oferta"
-                               type="email">
+                    <div class="form-group new-offer-email">
+                        <label class="control-label" for="new-offer-title">Títol</label>
+                        <input class="form-control" id="new-offer-title" placeholder="Introdueix el títol de l'oferta" type="text">
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputPassword1">Descripció</label>
-                        <textarea class="form-control" rows="3" placeholder="Descriu breument l'oferta"></textarea>
+                    <div class="form-group new-offer-description">
+                        <label class="control-label" for="new-offer-description">Descripció</label>
+                        <textarea class="form-control" rows="3" id="new-offer-description" placeholder="Descriu breument l'oferta"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputEmail1">Data fi</label>
-                        <div>
-                            <input type="date">
-                        </div>
+                    <div class="form-group new-offer-date-end">
+                        <label class="control-label" for="new-offer-date-end">Data fi</label>
+                        <input class="form-control datepicker" id="new-offer-date-end" type="text">
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputEmail1">Població</label>
-                        <input class="form-control" id="exampleInputEmail1" placeholder="Introdueix el títol de l'oferta"
-                               type="email">
+                    <div class="form-group new-offer-location">
+                        <label class="control-label" for="new-offer-location">Població</label>
+                        <input class="form-control" id="new-offer-location" placeholder="Població" type="text">
                     </div>
-                    <div class="form-group">
-                        <label class="control-label" for="exampleInputEmail1">Foto oferta</label>
-                        <input class="file" id="input-1" type="file">
+                    <div class="form-group new-offer-image">
+                        <label class="control-label" for="new-offer-image">Foto oferta</label>
+                        <input class="form-control" id="new-offer-image" type="file">
                     </div>
-                    <button type="submit" class="btn btn-danger">&lt;&lt; Tornar inici</button>
-                    <button type="submit" class="btn btn-primary">Publicar oferta a Facebook</button>
+                    <div class="form-group new-offer-submit">
+                        <a class="btn btn-link" href="#">Cancela</a>
+                        <a class="btn btn-primary" href="#">Publica</a>
+                    </div>
                 </form>
 
             </article>
@@ -93,6 +91,17 @@
         </footer>
 
     <script type="text/javascript" src="js/hackajobs-stylesheet-dependencies.js"></script>
+    <script type="text/javascript">
+        (function ($, window, document, undefined ) {
+            // Break if datepicker is not present
+            if(!$.fn.datepicker) return;
+            // Attach datepicker
+            $(".datepicker").datepicker({
+                language: "ca"
+            });
+        })( jQuery, window, document );
+    </script>
 
+    </body>
 
 </html>
