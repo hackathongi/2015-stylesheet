@@ -17,4 +17,5 @@ Demo (master branch): [Pendant](Pendant)
 
 ## ChangeLog
 
+- Init the DEV branch
 - Init the repository
