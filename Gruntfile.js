@@ -18,6 +18,9 @@ module.exports = function(grunt){
 
         dependenciesJs: {
             task: {}
+        },
+        dependenciesStyles: {
+            task: {}
         }
 
     });
@@ -25,14 +28,24 @@ module.exports = function(grunt){
     // Load in any and all tasks in the `tasks` folder
     grunt.loadTasks('tasks');
 
-    // Demo task
+    // Dependencies JS task
     grunt.registerTask('dependencies-js', function() {
         grunt.task.run('dependenciesJs');
     });
 
+    // Dependencies Styles task
+    grunt.registerTask('dependencies-styles', function() {
+        grunt.task.run('dependenciesStyles');
+    });
+
+    // Dependencies Common task
+    grunt.registerTask('dependencies', function() {
+        grunt.task.run('dependencies-js', 'dependencies-styles');
+    });
+
     // Default task
     grunt.registerTask('default', function() {
-        grunt.task.run('dependencies-js');
+        grunt.task.run('dependencies');
     });
 
 };
