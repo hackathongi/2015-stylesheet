@@ -19,6 +19,29 @@ a {
   }
 }
 
+header {
+  background-color: @well-bg;
+  padding: @grid-gutter-width;
+  padding-bottom: ceil(@grid-gutter-width * .25);
+  border-bottom: solid 2px @brand-success;
+  .wally-logo {
+    width: 180px;
+    float: right;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+footer {
+  background-color: @well-bg;
+  padding: ceil(@grid-gutter-width * .75);
+  border-top: solid 2px @brand-success;
+  text-align: center;
+}
+
 // ===================================
 // MEDIA QUERIES SAMPLE (Using Native MediaQueries)
 // ===================================
