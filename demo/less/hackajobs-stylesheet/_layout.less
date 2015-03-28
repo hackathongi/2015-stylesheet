@@ -1,0 +1,53 @@
+/*
+ * HackaJobs Stylesheet
+ * Layout
+ *
+ * March 2015
+ *
+ */
+
+// ===================================
+// BASE LAYOUT
+// ===================================
+
+// ---------------------------
+// REMOVE DOTTED BORDER on LINKS
+// ---------------------------
+a {
+  &:hover, &:focus, &:active {
+    outline: 0;
+  }
+}
+
+// ===================================
+// MEDIA QUERIES SAMPLE (Using Native MediaQueries)
+// ===================================
+/*
+ * !! IMPORTANT !!
+ *
+ * Think in Mobile First before use mediaQueries.
+ * By default assume that you're working on a XS screen.
+ *
+ * Place each mediaQuery closest to the affected selector,
+ * to keep the code readable.
+ *
+ */
+
+// XXS Only
+// ====--------------------
+@media (max-width: @screen-xxs-max) {}
+// SM Only
+// ============------------
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+// SM and Wider
+// ============++++++++++++
+@media (min-width: @screen-sm-min) {}
+// MD Only
+// ================--------
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {}
+// MD and Wider
+// ================++++++++
+@media (min-width: @screen-md-min) {}
+// LG Only
+// ====================----
+@media (min-width: @screen-lg-min) {}

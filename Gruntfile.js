@@ -21,6 +21,9 @@ module.exports = function(grunt){
         },
         dependenciesStyles: {
             task: {}
+        },
+        buildStyles: {
+            task: {}
         }
 
     });
@@ -43,9 +46,14 @@ module.exports = function(grunt){
         grunt.task.run('dependencies-js', 'dependencies-styles');
     });
 
+    // Build Styles
+    grunt.registerTask('build-styles', function() {
+        grunt.task.run('buildStyles');
+    });
+
     // Default task
     grunt.registerTask('default', function() {
-        grunt.task.run('dependencies');
+        grunt.task.run('dependencies', 'build-styles');
     });
 
 };
