@@ -26,10 +26,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-ex-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="">
+                        <li class="active">
                             <a href="#">Inici<br></a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#">Alta Oferta<br></a>
                         </li>
                         <li>
@@ -48,38 +48,45 @@
                                 <a href="#">Inici</a>
                             </li>
                             <li>
-                                <a href="#">Ofertes</a>
+                                <a href="#">Llistat d'ofertes</a>
                             </li>
                         </ul>
-                        <h1>Ofertes</h1>
-                        <form role="form">
-                            <div class="form-group">
-                                <label class="control-label" for="exampleInputEmail1">Títol</label>
-                                <input class="form-control" id="exampleInputEmail1" placeholder="Introdueix el títol de l'oferta"
-                                type="email">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="exampleInputPassword1">Descripció</label>
-                                <textarea class="form-control" rows="3" placeholder="Descriu breument l'oferta"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="exampleInputEmail1">Data fi</label>
-                                <div>
-                                    <input type="date">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="exampleInputEmail1">Població</label>
-                                <input class="form-control" id="exampleInputEmail1" placeholder="Introdueix el títol de l'oferta"
-                                type="email">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="exampleInputEmail1">Foto oferta</label>
-                                <input class="file" id="input-1" type="file">
-                            </div>
-                            <button type="submit" class="btn btn-danger">&lt;&lt; Tornar inici</button>
-                            <button type="submit" class="btn btn-primary">Publicar oferta a Facebook</button>
-                        </form>
+                        <h1>Llistat d'ofertes</h1>
+                        <a class="btn btn-primary">Crear oferta</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Títol</th>
+                                    <th>Descripció</th>
+                                    <th>Data inici</th>
+                                    <th>Data fi</th>
+                                    <th>Inscrits</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cambrer restaurant platja</td>
+                                    <td>Necessitem un cambrer a jornada...</td>
+                                    <td>05/10/2015</td>
+                                    <td>12/11/2015</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>2</td>
+                                    <td>Cambrer restaurant platja</td>
+                                    <td>Necessitem un cambrer a jornada...</td>
+                                    <td>05/10/2015</td>
+                                    <td>12/11/2015</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
