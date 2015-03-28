@@ -6844,6 +6844,7 @@ a:active {
   border-width: 2px;
   font-size: 16px;
   font-family: "Arial Black", Gadget, sans-serif;
+  letter-spacing: -1px;
 }
 h1 {
   text-transform: uppercase;
@@ -6870,4 +6871,10 @@ h5 {
 h6 {
   text-transform: uppercase;
   letter-spacing: -0.5px;
+}
+.small {
+  color: #848484;
+}
+.lead {
+  color: #111111;
 }
