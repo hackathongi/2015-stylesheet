@@ -7998,6 +7998,22 @@ h6 {
   padding: 10px;
   border-top: solid 1px #988a80;
 }
+.offer-applicant:before,
+.offer-applicant:after {
+  content: " ";
+  display: table;
+}
+.offer-applicant:after {
+  clear: both;
+}
+.offer-applicant:before,
+.offer-applicant:after {
+  content: " ";
+  display: table;
+}
+.offer-applicant:after {
+  clear: both;
+}
 .offer-applicant:last-child {
   border-bottom: solid 1px #988a80;
 }
@@ -8041,4 +8057,84 @@ h6 {
   width: 10px;
   height: 1px;
   background-color: rgba(152, 138, 128, 0.5);
+}
+.offer-mutual-friends {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.offer-mutual-friends:before,
+.offer-mutual-friends:after {
+  content: " ";
+  display: table;
+}
+.offer-mutual-friends:after {
+  clear: both;
+}
+.offer-mutual-friends:before,
+.offer-mutual-friends:after {
+  content: " ";
+  display: table;
+}
+.offer-mutual-friends:after {
+  clear: both;
+}
+.mutual-friend {
+  padding: 10px;
+  border-top: solid 1px #eeeeee;
+}
+.mutual-friend:before,
+.mutual-friend:after {
+  content: " ";
+  display: table;
+}
+.mutual-friend:after {
+  clear: both;
+}
+.mutual-friend:before,
+.mutual-friend:after {
+  content: " ";
+  display: table;
+}
+.mutual-friend:after {
+  clear: both;
+}
+.mutual-friend:last-child {
+  border-bottom: solid 1px #eeeeee;
+}
+.mutual-friend .friend-image {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+  position: relative;
+}
+.mutual-friend .friend-image img {
+  width: 100%;
+}
+.mutual-friend .friend-name {
+  padding-left: 85px;
+  margin-top: 0;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .mutual-friend {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .mutual-friend {
+    position: relative;
+    float: left;
+    width: 33.33333333%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
 }

@@ -1,0 +1,43 @@
+.offer-mutual-friends {
+  .hck-make-row();
+}
+
+.mutual-friend {
+  padding: ceil(@grid-gutter-width * .5);
+  border-top: solid 1px @gray-lighter;
+  .clearfix();
+  &:last-child {
+    border-bottom: solid 1px @gray-lighter;
+  }
+
+
+
+  .friend-image {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: ceil(@grid-gutter-width * .5);
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  .friend-name {
+    padding-left: ceil(75px + ceil(@grid-gutter-width * .5) );
+    margin-top: 0;
+    position: relative;
+  }
+
+}
+
+@media (min-width: @screen-sm-min) {
+  .mutual-friend {
+    .hck-make-col(1,2);
+  }
+}
+@media (min-width: @screen-md-min) {
+  .mutual-friend {
+    .hck-make-col(1,3);
+  }
+}
