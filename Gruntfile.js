@@ -24,6 +24,17 @@ module.exports = function(grunt){
         },
         buildStyles: {
             task: {}
+        },
+        watch: {
+            styles: {
+                files: [
+                    'less/*.less'
+                ],
+                tasks: ['build-styles'],
+                options: {
+                    livereload: true
+                }
+            }
         }
 
     });
