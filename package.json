@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.org:gnahs/rho-stylesheet.git"
+    "url": "git@github.org:hackathongi/2015-stylesheet.git"
   },
   "devDependencies": {
     "grunt":                "^0.4.5",
