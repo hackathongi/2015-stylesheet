@@ -3084,7 +3084,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #ffffff;
   background-color: #d92317;
-  border-color: #000000;
+  border-color: #c21f15;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3094,7 +3094,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #ab1c12;
-  border-color: #000000;
+  border-color: #8b160f;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3120,7 +3120,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #d92317;
-  border-color: #000000;
+  border-color: #c21f15;
 }
 .btn-primary .badge {
   color: #d92317;
@@ -3129,7 +3129,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success {
   color: #ffffff;
   background-color: #988a80;
-  border-color: #000000;
+  border-color: #8d7d72;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -3139,7 +3139,7 @@ fieldset[disabled] .btn-primary.active {
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
   background-color: #7e7167;
-  border-color: #000000;
+  border-color: #6b5f57;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3165,7 +3165,7 @@ fieldset[disabled] .btn-success:active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
   background-color: #988a80;
-  border-color: #000000;
+  border-color: #8d7d72;
 }
 .btn-success .badge {
   color: #988a80;
@@ -3174,7 +3174,7 @@ fieldset[disabled] .btn-success.active {
 .btn-info {
   color: #ffffff;
   background-color: #3e579d;
-  border-color: #000000;
+  border-color: #374d8b;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -3184,7 +3184,7 @@ fieldset[disabled] .btn-success.active {
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
   background-color: #304378;
-  border-color: #000000;
+  border-color: #25355f;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3210,7 +3210,7 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
   background-color: #3e579d;
-  border-color: #000000;
+  border-color: #374d8b;
 }
 .btn-info .badge {
   color: #3e579d;
@@ -6844,4 +6844,37 @@ a:active {
   border-width: 2px;
   font-size: 16px;
   font-family: "Arial Black", Gadget, sans-serif;
+  letter-spacing: -1px;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+h2 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+h4 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+h6 {
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+.small {
+  color: #848484;
+}
+.lead {
+  color: #111111;
 }
